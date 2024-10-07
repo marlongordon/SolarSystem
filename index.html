@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System: Document Object Model:30 Days Of JavaScript</title>
+    <style>
+        h1 {
+            color: white
+        }
+
+        body {
+            background-image: url("images/galaxy.gif");
+            text-align: center;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            padding: 60px;
+            width: 1200px;
+            margin: auto;
+        }
+
+        #foto {
+            text-align: center;
+        }
+
+        /* Estilo para o box de mensagens */
+        #mensagem {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            color: black;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Calcule o peso de um objeto em um planeta</h1>
+
+    <input type="number" name="minkg" id="minkg" placeholder="Massa em Kg">
+
+    <select name="planetas" id="planetas">
+        <option value="" disabled selected>--selecionar planeta--</option>
+        <option value="Mercúrio">Mercúrio</option>
+        <option value="Vênus">Vênus</option>
+        <option value="Terra">Terra</option>
+        <option value="Lua">Lua</option>
+        <option value="Marte">Marte</option>
+        <option value="Júpiter">Júpiter</option>
+        <option value="Saturno">Saturno</option>
+        <option value="Urano">Urano</option>
+        <option value="Netuno">Netuno</option>
+        <option value="Plutão">Plutão</option>
+    </select>
+
+    <input type="button" value="Calcular peso" onclick="calcular()"><br><br>
+
+    <section>
+        <div id="foto">
+            <img id="imagem" src="images/earth.png" alt="Foto da Terra">
+        </div>
+        <div id="mensagem"></div> <!-- Div para exibir as mensagens -->
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
